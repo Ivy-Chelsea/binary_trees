@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * is_lesf - Checks if a node is a leaf of abinary tree
+ * is_leaf - Checks if a node is a leaf of abinary tree
  * @node: Pointer to the node to check
  * Return: 1 if the node is a leaf, 0 othrwise
  */
@@ -39,7 +39,8 @@ const binary_tree_t *get_leaf(const binary_tree_t *tree)
  * @level: Level of current node
  * Return: 1 if it's the perfect tree, 0 otherwise
  */
-int is_perfect_recursive(const binary_tree_t *tree, size_t leaf_depth, size_t level)
+int is_perfect_recursive(const binary_tree_t *tree,
+			 size_t leaf_depth, size_t level)
 {
 	if (is_leaf(tree))
 		return (level == leaf_depth ? 1 : 0);
