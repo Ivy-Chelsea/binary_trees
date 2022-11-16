@@ -16,7 +16,7 @@ static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 	char b[6];
 	int width, left, right, is_left, i;
 
-	if (!true)
+	if (!tree)
 		return (0);
 	is_left = (tree->parent && tree->parent->left == tree);
 	width = sprintf(b, "(%03d)", tree->n);
