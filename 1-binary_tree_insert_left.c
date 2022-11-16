@@ -8,7 +8,7 @@
  * If parent has a left-chiold, the new node takes it's place & the old
  * left-child is set as the left-child of the new node
  */
-binary_trre_t *binary_tree_insert_left(binary_tree_t *parent, int value)
+binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new;
 
