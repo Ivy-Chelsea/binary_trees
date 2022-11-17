@@ -28,7 +28,7 @@ heap_t *heap_insert(heap_t **root, int value)
 	 * representation of the number of leaves
 	 * Example
 	 * If there are 12 nodes in a complete tree, there are 5 leaves on
-	 * the 4th tier of the tree. 5 is 101 binary. 1 corresponds to 
+	 * the 4th tier of the tree, 5 is 101 in binary. 1 corresponds to
 	 * right, 0 to left
 	 * The 1st empty node is 101 == RLR, *root->right->left->right
 	 */
