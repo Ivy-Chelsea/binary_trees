@@ -19,7 +19,7 @@ heap_t *heap_insert(heap_t **root, int value)
 	size = binary_tree_size(tree);
 	leaves = size;
 	for (level = 0, sub = 1; leaves >= sub; sub *= 2, level++)
-		laeves -= sub;
+		leaves -= sub;
 
 	for (bit = 1 << (level - 1); bit != 1; bit >>= 1)
 		tree = leaves & bit ? tree->right : tree->left;
