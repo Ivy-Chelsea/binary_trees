@@ -42,10 +42,10 @@ size_t tree_size_h(const binary_tree_t *tree)
 
 	if (tree->left)
 		height_l = 1 + tree_size_h(tree->left);
-	
+
 	if (tree->right)
 		height_r = 1 + tree_size_h(tree->right);
-	
+
 	return (height_l + height_r);
 }
 
@@ -60,11 +60,11 @@ void _preorder(heap_t *tree, heap_t **node, size_t height)
 {
 	if (!tree)
 		return;
-	
+
 	if (!height)
 		*node = tree;
 	height--;
-	
+
 	_preorder(tree->left, node, height);
 	_preorder(tree->right, node, height);
 }
@@ -77,12 +77,12 @@ void heapify(heap_t *root)
 {
 	int value;
 	heap_t *tmp1, *tmp2;
-	
+
 	if (!root)
 		return;
-	
+
 	tmp1 = root;
-	
+
 	while (1)
 	{
 		if (!tmp1->left)
@@ -125,9 +125,9 @@ int heap_extract(heap_t **root)
 		free(heap_r);
 		return (value);
 	}
-	
+
 	_preorder(heap_r, &node, tree_height(heap_r));
-	
+
 	heap_r->n = node->n;
 	if (node->parent->right)
 		node->parent->right = NULL;
