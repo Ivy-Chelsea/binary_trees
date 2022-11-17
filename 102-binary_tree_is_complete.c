@@ -82,7 +82,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 		return (0);
 
 	head = tail = create_node((binary_tree_t *) tree);
-	if (head = NULL)
+	if (head == NULL)
 		exit(1);
 
 	while (head != NULL)
