@@ -5,10 +5,10 @@
  * @node: Pointer node
  * @array: input array of integers
  * @size: array size
- * @node: node to add to the left and right
+ * @node2: node to add to the left and right
  * Return: nothing
  */
-void create_tree(avl_t **node, int *array, size_t size, int node)
+void create_tree(avl_t **node, int *array, size_t size, int node2)
 {
 	size_t middle;
 
@@ -18,7 +18,7 @@ void create_tree(avl_t **node, int *array, size_t size, int node)
 	middle = (size / 2);
 	middle = (size % 2 == 0) ? middle - 1 : middle;
 
-	if (node == 1)
+	if (node2 == 1)
 	{
 		(*node)->left = binary_tree_node(*node, array[middle]);
 		create_tree(&((*node)->left), array, middle, 1);
