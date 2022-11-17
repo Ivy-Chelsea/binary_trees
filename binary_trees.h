@@ -30,7 +30,7 @@ typedef struct binary_tree_s heap_t;
  * @node: A node of binary tree
  * @next: Next node to traverse to in the binary tree
  */
-typedef struct levelorder_queu_s
+typedef struct levelorder_queue_s
 {
 	binary_tree_t *node;
 	struct levelorder_queue_s *next;
