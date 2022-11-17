@@ -128,7 +128,7 @@ int heap_extract(heap_t **root)
 	
 	_preorder(heap_r, &node, tree_height(heap_r));
 	
-	haep_r->n = node->n;
+	heap_r->n = node->n;
 	if (node->parent->right)
 		node->parent->right = NULL;
 	else
