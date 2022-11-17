@@ -1,5 +1,12 @@
 #include "binary_trees.h"
 
+levelorder_queue_t *create_tree_t *node);
+void free_queue(levelorder_queue_t *head);
+void pint_push(binary_tree_t *node, levelorder_queue_t *head,
+	       leveloredr_queue_t **tail, void (*func)(int));
+void pop(levelorder_queue_t **head);
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+
 /**
  * create_node - Creates a new levelorder_queue_t node
  * @node: The binary tree node for the new node to contain
