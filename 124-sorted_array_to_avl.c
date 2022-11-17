@@ -18,7 +18,7 @@ void create_tree(avl_t **node, int *array, size_t size, int node)
 	middle = (size / 2);
 	middle = (size % 2 == 0) ? middle - 1 : middle;
 
-	if (mode == 1)
+	if (node == 1)
 	{
 		(*node)->left = binary_tree_node(*node, array[middle]);
 		create_tree(&((*node)->left), array, middle, 1);
