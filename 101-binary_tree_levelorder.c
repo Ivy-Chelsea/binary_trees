@@ -67,6 +67,17 @@ void pint_push(binary_tree_t *node, levelorder_queue_t *head,
 		(*tail)->next = new;
 		*tail = new;
 	}
+	if (node->right != NULL)
+	{
+		new = create_node(node->right);
+		if (new == NULL)
+		{
+			free_queue(head);
+			exit(1);
+		}
+		(*tail)->next = new;
+		*tail = new;
+	}
 }
 
 /**
