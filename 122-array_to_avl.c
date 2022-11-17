@@ -4,7 +4,7 @@
  * array_to_avl - Builds an AVL from ana array
  * @array: Pointer to the 1st element of the array to be convrted
  * @size: Number of elements in @array
- * Return: Pointer to the root node of the created AVL on success, NULL otherwise
+ * Return: Pointer to root node of the created AVL on success, NULL otherwise
  */
 avl_t *array_to_avl(int *array, size_t size)
 {
