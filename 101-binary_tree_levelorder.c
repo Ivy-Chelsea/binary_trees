@@ -43,14 +43,15 @@ void free_queue(levelorder_queue_t *head)
 }
 
 /**
- * pint_push - Runs function & pushes its children into a levelorder_queue_t queue
+ * pint_push - Runs function & pushes its children into a levelorderqueue_t
  * @node: Binary tree node to print and push
  * @head: Double pointer to the head of the queue
  * @tail: Double pointer to the tail of the queue
  * @func: Pointer to the function to call @node
  * On malloc failure exit with status code of 1
  */
-void pint_push(binary_tree_t *node, levelorder_queue_t *head, levelorder_queue_t **tail, void (*func)(int))
+void pint_push(binary_tree_t *node, levelorder_queue_t *head,
+	       levelorder_queue_t **tail, void (*func)(int))
 {
 	levelorder_queue_t *new;
 
