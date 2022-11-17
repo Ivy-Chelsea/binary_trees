@@ -41,7 +41,8 @@ void free_queue(levelorder_queue_t *head)
  * @head: Double pointer to the head of the queue
  * @tail: Double pointer to the tail of the queue
  */
-void push(binary_tree_t *node, levelorder_queue_t *head, levelorder_queue_t **tail)
+void push(binary_tree_t *node,
+	  levelorder_queue_t *head, levelorder_queue_t **tail)
 {
 	levelorder_queue_t *new;
 
