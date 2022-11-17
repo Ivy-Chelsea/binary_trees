@@ -45,7 +45,7 @@ void push(binary_tree_t *node, levelorder_queue_t *head, levelorder_queue_t **ta
 {
 	levelorder_queue_t *new;
 
-	new = craete_node(node);
+	new = create_node(node);
 	if (new == NULL)
 	{
 		free_queue(head);
