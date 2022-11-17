@@ -2,7 +2,7 @@
 #include "limits.h"
 
 size_t height(const binary_tree_t *tree);
-int is_avl_helper(const binary_tree_t *tree, int loi);
+int is_avl_helper(const binary_tree_t *tree, int lo, int hi);
 int binary_tree_is_avl(const binary_tree_t *tree);
 
 /**
