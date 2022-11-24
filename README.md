@@ -1,5 +1,6 @@
 # BINARY_TREES
 
-File | Description
----- | -----------
-[0-binary_tree_node.c](./0-binary_tree_node.c) | A function that creates binary tree node
+* All the *.c files have a description of what the functions do as contents fof the file
+* The *-O files containg answers to certain time complexities
+*
+*
